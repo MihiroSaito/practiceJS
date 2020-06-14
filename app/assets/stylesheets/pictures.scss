@@ -1,0 +1,60 @@
+.wrapper-pictures {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .contents-pictures {
+    width: 80%;
+    height: 500px;
+    display: flex;
+
+
+    .left-arrow {
+      height: 500px;
+      width: 50px;
+      background-color: rgba(0, 0, 0, 0.132);
+
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 1.5em;
+        color: white;
+      }
+    }
+
+    .pictures {
+      width: calc(100% - 100px);
+      height: 500px;
+
+      .images li {
+        width: 100%;
+        height: 100%;
+      }
+
+      .points li {
+        width: 15px;
+        height: 15px;
+        background-color: lightgray;
+      }
+    }
+
+    .right-arrow {
+      height: 500px;
+      width: 50px;
+      background-color: rgba(0, 0, 0, 0.132);
+
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 1.5em;
+        color: white;
+      }
+    }
+  }
+}

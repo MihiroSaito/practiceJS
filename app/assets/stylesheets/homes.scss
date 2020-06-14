@@ -16,7 +16,7 @@
     .title {
       font-size: 50px;
       font-family: serif;
-      animation: fadeIn 3s ease 0.1s 1 normal, upElement 0.7s ease 3s 1 normal;
+      animation: fadeIn 3s ease 0.1s 1 normal, upElement 0.5s ease 3s 1 normal;
       color: white;
       font-weight: bold;
       animation-fill-mode: forwards;
@@ -24,27 +24,27 @@
       position: absolute;
 
       .message {
-        animation: fadeIn3 0.6s ease 4s 1 normal;
+        animation: fadeIn3 0.6s ease 3.5s 1 normal;
         animation-fill-mode: forwards;
         padding: 0 30px;
         margin: auto;
 
         h3 {
-          animation: fadeIn4 0.6s ease 4s 1 normal;
+          animation: fadeIn4 0.6s ease 3.5s 1 normal;
           font-size: small;
           opacity: 0;
           animation-fill-mode: forwards;
         }
 
         p {
-          animation: fadeIn4 0.6s ease 4s 1 normal;
+          animation: fadeIn4 0.6s ease 3.5s 1 normal;
           font-size: small;
           opacity: 0;
           animation-fill-mode: forwards;
         }
 
         a {
-          animation: fadeIn5 0.6s ease 4.1s 1 normal;
+          animation: fadeIn5 0.6s ease 3.5s 1 normal;
           font-size: small;
           opacity: 0;
           animation-fill-mode: forwards;
@@ -52,41 +52,41 @@
       }
     }
 
-    @keyframes fadeIn { /*animetion-nameで設定した値を書く*/
+    @keyframes fadeIn {
 
-      0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+      0% {opacity: 0}
 
       40% {opacity: 0}
     
-      100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+      100% {opacity: 1}
 
     }
 
-    @keyframes fadeIn2 { /*animetion-nameで設定した値を書く*/
+    @keyframes fadeIn2 {
 
-      0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+      0% {opacity: 0}
 
       50% {opacity: 0}
     
-      100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+      100% {opacity: 1}
 
     }
 
-    @keyframes fadeIn3 { /*animetion-nameで設定した値を書く*/
+    @keyframes fadeIn3 {
 
       0% { 
-        width: 70%;
+        width: auto;
         height: auto;
         opacity: 0;
         color: white;
       } 
 
-      90% {
-        opacity: 0.8;
+      40% {
+        opacity: 0;
       }
 
       100% { 
-        width: 70%;
+        width: auto;
         height: auto;
         margin-top: 50px;
         background-color: rgba(0, 0, 0, 0.529);
@@ -95,11 +95,7 @@
 
     }
 
-    @keyframes fadeIn4 { /*animetion-nameで設定した値を書く*/
-
-      0% { 
-
-      } 
+    @keyframes fadeIn4 { 
 
       100% { 
         height: 100%;
@@ -111,12 +107,7 @@
 
     }
 
-    @keyframes fadeIn5 { /*animetion-nameで設定した値を書く*/
-
-      0% { 
-
-      } 
-
+    @keyframes fadeIn5 { 
       100% { 
         padding: 15px 50px;
         border: 1px solid white;
@@ -130,20 +121,18 @@
 
     }
 
-    @keyframes upElement { /*animetion-nameで設定した値を書く*/
+    @keyframes upElement { 
 
       0%{
-        margin-top: 0;
-      }
-
-      70% {
-        top: 317px;
+        top: 41%;
       }
 
       100%{
         color: white;
-        top: 120px;
+        top: 15%;
         font-size: 40px;
+        margin: auto;
+        width: 70%;
       }
 
     }
